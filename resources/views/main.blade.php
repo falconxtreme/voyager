@@ -48,7 +48,7 @@
                     <div class="navbar-header pull-left">
                         <a href="#" class="navbar-brand">
                             <small>
-                                <img src="assets/img/logo.png" alt="" />
+                                <img src="assets/img/fitel-enlace.png" alt="FITEL" />
                             </small>
                         </a>
                     </div>
@@ -58,14 +58,16 @@
                         <i class="collapse-icon fa fa-bars"></i>
                     </div>
                     <!-- /Sidebar Collapse -->
-                    <!-- Account Area and Settings --->
+                    <!-- Account Area and Settings -->
                     <div class="navbar-header pull-right">
                         <div class="navbar-account">
                             <ul class="account-area">
                                 <li>
+                                    <!--
                                     <a class=" dropdown-toggle" data-toggle="dropdown" title="Notifications" href="#">
                                         <i class="icon fa fa-warning"></i>
                                     </a>
+                                    -->
                                     <!--Notification Dropdown-->
                                     <ul class="pull-right dropdown-menu dropdown-arrow dropdown-notifications">
                                         <li>
@@ -145,10 +147,12 @@
                                     <!--/Notification Dropdown-->
                                 </li>
                                 <li>
+                                    <!--
                                     <a class="dropdown-toggle" data-toggle="dropdown" title="Mails" href="#">
                                         <i class="icon fa fa-envelope"></i>
                                         <span class="badge">3</span>
                                     </a>
+                                    -->
                                     <!--Messages Dropdown-->
                                     <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
                                         <li>
@@ -212,10 +216,12 @@
                                     <!--/Messages Dropdown-->
                                 </li>
                                 <li>
+                                    <!--
                                     <a class="dropdown-toggle" data-toggle="dropdown" title="Tasks" href="#">
                                         <i class="icon fa fa-tasks"></i>
                                         <span class="badge">4</span>
                                     </a>
+                                    -->
                                     <!--Tasks Dropdown-->
                                     <ul class="pull-right dropdown-menu dropdown-tasks dropdown-arrow ">
                                         <li class="dropdown-header bordered-darkorange">
@@ -280,27 +286,29 @@
                                     <!--/Tasks Dropdown-->
                                 </li>
                                 <li>
+                                    <!--
                                     <a class="wave in" id="chat-link" title="Chat" href="#">
                                         <i class="icon glyphicon glyphicon-comment"></i>
                                     </a>
+                                    -->
                                 </li>
                                 <li>
                                     <a class="login-area dropdown-toggle" data-toggle="dropdown">
                                         <div class="avatar" title="View your public profile">
-                                            <img src="assets/img/avatars/adam-jansen.jpg">
+                                            <img src="assets/img/avatars/images.jpg">
                                         </div>
                                         <section>
-                                            <h2><span class="profile"><span>David Stevenson</span></span></h2>
+                                            <h2><span class="profile"><span>Mario Valverde</span></span></h2>
                                         </section>
                                     </a>
                                     <!--Login Area Dropdown-->
                                     <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
-                                        <li class="username"><a>David Stevenson</a></li>
-                                        <li class="email"><a>David.Stevenson@live.com</a></li>
+                                        <li class="username"><a>Mario Valverde</a></li>
+                                        <li class="email"><a>Mario.Valverde@live.com</a></li>
                                         <!--Avatar Area-->
                                         <li>
                                             <div class="avatar-area">
-                                                <img src="assets/img/avatars/adam-jansen.jpg" class="avatar">
+                                                <img src="assets/img/avatars/images.jpg" class="avatar">
                                                 <span class="caption">Change Photo</span>
                                             </div>
                                         </li>
