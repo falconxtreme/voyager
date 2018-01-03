@@ -43,175 +43,548 @@
         <div class="page-body">
             <h5 class="row-title"><i class="typcn typcn-tag"></i>Alarmas</h5>
             <div class="row">
-                <div class="col-xs-12 col-md-12">
-                    <div class="well with-header with-footer">
-                        <!--bordered-yellow-->
-                        <div class="header bordered-sky">
-                            Alarmas por severidad
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="widget  radius-bordered">
+                        <div class="widget-header">
+                            <span class="widget-caption">Gestores de Red</span>
                         </div>
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Id Trap
-                                    </th>
-                                    <th>
-                                        Severidad
-                                    </th>
-                                    <th>
-                                        Fecha Inicio
-                                    </th>
-                                    <th>
-                                        Fecha Fin
-                                    </th>
-                                    <th>
-                                        Elemento Afectado
-                                    </th>
-                                    <th>
-                                        Descripción
-                                    </th>
-                                    <th>
-                                        Estado
-                                    </th>
-                                    <th>
-                                        Nro. Reparación
-                                    </th>
-                                    <th>
-                                        Motivo Exclusión
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                        <div class="widget-body">
+                            <div class="docs-example">
+                                <ul class="nav nav-tabs tabs-flat">
+                                    <li class="active"><a href="#prime-tab" data-toggle="tab">Prime</a></li>
+                                    <li class=""><a href="#cambium-tab" data-toggle="tab">Cambium</a></li>
+                                    <li class=""><a href="#neteco-tab" data-toggle="tab">Neteco</a></li>
+                                </ul>
 
-                                <tr class="active">
-                                    <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        Minor
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                </tr>
+                                <form id="accountForm" method="post" class="form-horizontal bv-form" novalidate="novalidate">
+                                    <div class="tab-content tabs-flat">
+                                        <!-- PRIME TAB -->
+                                        <div class="tab-pane active" id="prime-tab">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-12">
+                                                    <div class="well with-header with-footer">
+                                                        <!--bordered-yellow-->
+                                                        <div class="header bordered-sky">
+                                                            Alarmas por severidad
+                                                        </div>
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>
+                                                                        Id Trap
+                                                                    </th>
+                                                                    <th>
+                                                                        Severidad
+                                                                    </th>
+                                                                    <th>
+                                                                        Fecha Inicio
+                                                                    </th>
+                                                                    <th>
+                                                                        Fecha Fin
+                                                                    </th>
+                                                                    <th>
+                                                                        Elemento Afectado
+                                                                    </th>
+                                                                    <th>
+                                                                        Descripción
+                                                                    </th>
+                                                                    <th>
+                                                                        Estado
+                                                                    </th>
+                                                                    <th>
+                                                                        Nro. Reparación
+                                                                    </th>
+                                                                    <th>
+                                                                        Motivo Exclusión
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
 
-                                <tr class="success">
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        Mayor
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                </tr>
+                                                                <tr class="success">
+                                                                    <td>
+                                                                        1
+                                                                    </td>
+                                                                    <td>
+                                                                        Minor
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
 
-                                <tr class="warning">
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        warning
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                </tr>
+                                                                <tr class="warning">
+                                                                    <td>
+                                                                        2
+                                                                    </td>
+                                                                    <td>
+                                                                        Mayor
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
 
-                                <tr class="danger">
-                                    <td>
-                                        4
-                                    </td>
-                                    <td>
-                                        Critical
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                    <td>
-                                        Column heading
-                                    </td>
-                                </tr>
+                                                                <tr class="info">
+                                                                    <td>
+                                                                        3
+                                                                    </td>
+                                                                    <td>
+                                                                        warning
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
 
-                            </tbody>
-                        </table>
+                                                                <tr class="danger">
+                                                                    <td>
+                                                                        4
+                                                                    </td>
+                                                                    <td>
+                                                                        Critical
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
 
-                        <div class="footer">
-                            <code>alarmas</code>
+                                                            </tbody>
+                                                        </table>
+
+                                                        <div class="footer">
+                                                            <code>alarmas</code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane" id="cambium-tab">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-12">
+                                                    <div class="well with-header with-footer">
+                                                        <!--bordered-yellow-->
+                                                        <div class="header bordered-sky">
+                                                            Alarmas por severidad
+                                                        </div>
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>
+                                                                        Id Trap
+                                                                    </th>
+                                                                    <th>
+                                                                        Severidad
+                                                                    </th>
+                                                                    <th>
+                                                                        Fecha Inicio
+                                                                    </th>
+                                                                    <th>
+                                                                        Fecha Fin
+                                                                    </th>
+                                                                    <th>
+                                                                        Elemento Afectado
+                                                                    </th>
+                                                                    <th>
+                                                                        Descripción
+                                                                    </th>
+                                                                    <th>
+                                                                        Estado
+                                                                    </th>
+                                                                    <th>
+                                                                        Nro. Reparación
+                                                                    </th>
+                                                                    <th>
+                                                                        Motivo Exclusión
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+
+                                                                <tr class="success">
+                                                                    <td>
+                                                                        1
+                                                                    </td>
+                                                                    <td>
+                                                                        Minor
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr class="warning">
+                                                                    <td>
+                                                                        2
+                                                                    </td>
+                                                                    <td>
+                                                                        Mayor
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr class="info">
+                                                                    <td>
+                                                                        3
+                                                                    </td>
+                                                                    <td>
+                                                                        warning
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr class="danger">
+                                                                    <td>
+                                                                        4
+                                                                    </td>
+                                                                    <td>
+                                                                        Critical
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+
+                                                        <div class="footer">
+                                                            <code>alarmas</code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane" id="neteco-tab">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-12">
+                                                    <div class="well with-header with-footer">
+                                                        <!--bordered-yellow-->
+                                                        <div class="header bordered-sky">
+                                                            Alarmas por severidad
+                                                        </div>
+                                                        <table class="table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>
+                                                                        Id Trap
+                                                                    </th>
+                                                                    <th>
+                                                                        Severidad
+                                                                    </th>
+                                                                    <th>
+                                                                        Fecha Inicio
+                                                                    </th>
+                                                                    <th>
+                                                                        Fecha Fin
+                                                                    </th>
+                                                                    <th>
+                                                                        Elemento Afectado
+                                                                    </th>
+                                                                    <th>
+                                                                        Descripción
+                                                                    </th>
+                                                                    <th>
+                                                                        Estado
+                                                                    </th>
+                                                                    <th>
+                                                                        Nro. Reparación
+                                                                    </th>
+                                                                    <th>
+                                                                        Motivo Exclusión
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+
+                                                                <tr class="success">
+                                                                    <td>
+                                                                        1
+                                                                    </td>
+                                                                    <td>
+                                                                        Minor
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr class="warning">
+                                                                    <td>
+                                                                        2
+                                                                    </td>
+                                                                    <td>
+                                                                        Mayor
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr class="info">
+                                                                    <td>
+                                                                        3
+                                                                    </td>
+                                                                    <td>
+                                                                        warning
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr class="danger">
+                                                                    <td>
+                                                                        4
+                                                                    </td>
+                                                                    <td>
+                                                                        Critical
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                    <td>
+                                                                        Column heading
+                                                                    </td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+
+                                                        <div class="footer">
+                                                            <code>alarmas</code>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
         <!-- /Page Body -->
     </div>

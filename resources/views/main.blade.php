@@ -388,7 +388,7 @@
                     <div class="sidebar-header-wrapper">
                         <input type="text" class="searchinput" />
                         <i class="searchicon fa fa-search"></i>
-                        <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+                        <div class="searchhelper">Buscar</div>
                     </div>
                     <!-- /Page Sidebar Header -->
                     <!-- Sidebar Menu -->
@@ -413,5 +413,80 @@
 
         <!--Beyond Scripts-->
         <script src="{{ asset('js/beyond.js') }}"></script>
+
+
+        <!--Bootstrap Date Picker-->
+        <script src="{{ asset('js/datetime/bootstrap-datepicker.js') }}"></script>
+
+        <!--Bootstrap Time Picker-->
+        <script src="{{ asset('js/datetime/bootstrap-timepicker.js') }}"></script>
+
+        <!--Jquery Select2-->
+        <script src="{{ asset('js/select2/select2.js') }}"></script>
+
+        <!--MORRIS JS for Charts-->
+        <script src="{{ asset('js/charts/morris/raphael-2.0.2.min.js') }}"></script>
+        <script src="{{ asset('js/charts/morris/morris.js') }}"></script>
+        <script src="{{ asset('js/charts/morris/morris-init.js') }}"></script>
+
+        <!--FLOT JS for Charts-->
+        <script src="{{ asset('js/charts/flot/jquery.flot.js') }}"></script>
+
+        <script src="{{ asset('js/charts/flot/jquery.flot.orderBars.js') }}"></script>
+        <script src="{{ asset('js/charts/flot/jquery.flot.tooltip.js') }}"></script>
+        <script src="{{ asset('js/charts/flot/jquery.flot.resize.js') }}"></script>
+        <script src="{{ asset('js/charts/flot/jquery.flot.selection.js') }}"></script>
+
+        <script src="{{ asset('js/charts/flot/jquery.flot.stack.js') }}"></script>
+        <script src="{{ asset('js/charts/flot/flot-init.js') }}"></script>
+        
+        <script>
+            $( document ).ready(function() {
+                // Handler for .ready() called.
+
+                //--Bootstrap Date Picker--
+                $('.date-picker').datepicker();
+
+                //--Bootstrap Time Picker--
+                $('#timepicker1').timepicker();
+                $('#timepicker2').timepicker();
+
+                $("#e2").select2({
+                    placeholder: "Tipo de Reporte",
+                    allowClear: true
+                });
+
+                $("#ddlMedioReporte").select2({
+                    placeholder: "Medio de Reporte",
+                    allowClear: true
+                });
+            });
+            
+
+        </script>
+
+        <script type="text/javascript">
+            $(window).bind("load", function () {
+
+                /*Sets Themed Colors Based on Themes*/
+                themeprimary = getThemeColorFromCss('themeprimary');
+                themesecondary = getThemeColorFromCss('themesecondary');
+                themethirdcolor = getThemeColorFromCss('themethirdcolor');
+                themefourthcolor = getThemeColorFromCss('themefourthcolor');
+                themefifthcolor = getThemeColorFromCss('themefifthcolor');
+
+                //InitiateAreaChart.init();
+                //InitiateBarChart.init();
+                //InitiateDonutChart.init();
+                
+                //InitiateLineChartLatencia.init();
+                
+                //InitiateLineChart2.init();
+
+                //InitiateStackedChartLatencia.init();
+
+                InitiateFlotSelectableChartLatencia.init();
+            });
+        </script>
     </body>
 </html>
