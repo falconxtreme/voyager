@@ -14,17 +14,18 @@ class CreateUbigeoTable extends Migration
     public function up()
     {
         Schema::create('ubigeo', function (Blueprint $table) {
-            $table->string('id',6);
-            $table->timestamps();
-
-            $table->string('idDepartamento');
-            $table->string('idProvincia');
-            $table->string('idDistrito');
+            $table->increments('id');
+            $table->string('idDepartamento',2);
+            $table->string('idProvincia',4);
+            $table->string('idDistrito',6)->unique();
             $table->string('departamento');
             $table->string('provincia');
             $table->string('distrito');
+            $table->timestamps();
 
-            $table->primary('id');
+            // $table->string('distrito')->nullable(); // lo hace opcional
+            //$table->string('idDistrito',6)->unique();// agrega un constraint
+            //$table->primary('id');
             //$table->foreign('user_id')->references('id')->on('users');
         });
     }

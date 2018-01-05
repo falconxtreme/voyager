@@ -60,8 +60,8 @@ class MainMenuItemsTableSeeder extends Seeder
                 'url'        => '/reports',
                 'route'      => '',
             ]);
-            if (!$menuItem->exists) {
-                $menuItem->fill([
+            if (!$reportsMenuItem->exists) {
+                $reportsMenuItem->fill([
                     'target'     => '_self',
                     'icon_class' => 'menu-icon fa fa-file-text-o',
                     'color'      => null,
@@ -196,8 +196,8 @@ class MainMenuItemsTableSeeder extends Seeder
                 'url'        => '/kpis-link',
                 'route'      => '',
             ]);
-            if (!$menuItem->exists) {
-                $menuItem->fill([
+            if (!$calidadMenuItem->exists) {
+                $calidadMenuItem->fill([
                     'target'     => '_self',
                     'icon_class' => 'menu-icon fa fa-diamond',
                     'color'      => null,
