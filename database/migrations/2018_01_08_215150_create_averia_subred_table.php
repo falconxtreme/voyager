@@ -15,7 +15,16 @@ class CreateAveriaSubredTable extends Migration
     {
         Schema::create('averia_subred', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('idSubred')->unsigned()->nullable();
+            $table->string('idReporte');
+            $table->string('fechaAveria');
+            $table->string('descripcion');
+            $table->string('reportador');
+            $table->string('fechaSolucion');
+            $table->string('medioReporteAveria');
             $table->timestamps();
+
+            $table->foreign('idSubred')->references('id')->on('subred_beneficiario');
         });
     }
 

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInterrupcionDispositivoTable extends Migration
+class CreateInterrupcionSubsistemaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateInterrupcionDispositivoTable extends Migration
      */
     public function up()
     {
-        Schema::create('interrupcion_dispositivo', function (Blueprint $table) {
+        Schema::create('interrupcion_subsistema', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('idDispositivo')->unsigned()->nullable();
+            $table->string('idSubred');
             $table->string('tipoInterrupcion');
             $table->string('fechaInterrupcion');
             $table->string('fechaSolucion');
@@ -25,8 +25,6 @@ class CreateInterrupcionDispositivoTable extends Migration
             $table->string('situacionActual');
             $table->string('motivoExclusion');
             $table->timestamps();
-
-            $table->foreign('idDispositivo')->references('id')->on('dispositivo');
         });
     }
 
@@ -37,6 +35,6 @@ class CreateInterrupcionDispositivoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('interrupcion_dispositivo');
+        Schema::dropIfExists('interrupcion_subsistema');
     }
 }
