@@ -416,6 +416,7 @@ class ComposerStaticInitaec6b333f413c49d3c1c019a95995cae
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Dispositivo' => __DIR__ . '/../..' . '/app/Dispositivo.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -428,6 +429,7 @@ class ComposerStaticInitaec6b333f413c49d3c1c019a95995cae
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Nodo' => __DIR__ . '/../..' . '/app/Nodo.php',
         'App\\Product' => __DIR__ . '/../..' . '/app/Product.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -2882,6 +2884,8 @@ class ComposerStaticInitaec6b333f413c49d3c1c019a95995cae
         'Monolog\\Processor\\UidProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Processor/UidProcessor.php',
         'Monolog\\Processor\\WebProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Processor/WebProcessor.php',
         'Monolog\\Registry' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Registry.php',
+        'MyDispositivoTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MyDispositivoTableSeeder.php',
+        'MyNodoTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MyNodoTableSeeder.php',
         'MyUbigeoTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MyUbigeoTableSeeder.php',
         'NetworkMonitorDatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/NetworkMonitorDatabaseSeeder.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',

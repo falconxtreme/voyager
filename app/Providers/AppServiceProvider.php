@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        Schema::defaultStringLength(191);//for linux CENTOS 7
+        Schema::defaultStringLength(250);//for linux CENTOS 7
     }
 
     /**
