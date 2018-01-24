@@ -100,103 +100,47 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-
+                                                                <!--class="success" -->
+                                                                <!--class="warning" -->
+                                                                <!--class="info" -->
+                                                                <!--class="danger" -->
+                                                                @foreach ($alarms as $alarm)
+                                                                    <tr class="success">
+                                                                        <td>
+                                                                            {{ $alarm['id'] }}
+                                                                        </td>
+                                                                        <td>
+                                                                            {{ $alarm['severidad'] }}
+                                                                        </td>
+                                                                        <td>
+                                                                            {{ $alarm['fechaInicio'] }}
+                                                                        </td>
+                                                                        <td>
+                                                                            {{ $alarm['fechaFin'] }}
+                                                                        </td>
+                                                                        <td>
+                                                                            {{ $alarm['elementoAfectado'] }}
+                                                                        </td>
+                                                                        <td>
+                                                                            {{ $alarm['descripcion'] }}
+                                                                        </td>
+                                                                        <td>
+                                                                            {{ $alarm['estado'] }}
+                                                                        </td>
+                                                                        <td>
+                                                                            {{ $alarm['nroReparacion'] }}
+                                                                        </td>
+                                                                        <td>
+                                                                            {{ $alarm['motivoExclusion'] }}
+                                                                        </td>
+                                                                    </tr>
+                                                                @endforeach
                                                                 <tr class="success">
                                                                     <td>
                                                                         1
                                                                     </td>
                                                                     <td>
                                                                         Minor
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                </tr>
-
-                                                                <tr class="warning">
-                                                                    <td>
-                                                                        2
-                                                                    </td>
-                                                                    <td>
-                                                                        Mayor
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                </tr>
-
-                                                                <tr class="info">
-                                                                    <td>
-                                                                        3
-                                                                    </td>
-                                                                    <td>
-                                                                        warning
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                </tr>
-
-                                                                <tr class="danger">
-                                                                    <td>
-                                                                        4
-                                                                    </td>
-                                                                    <td>
-                                                                        Critical
                                                                     </td>
                                                                     <td>
                                                                         Column heading

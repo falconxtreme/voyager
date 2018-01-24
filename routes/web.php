@@ -24,9 +24,7 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-Route::get('/alarms', function(){
-	return view('alarms');
-});
+Route::get('/alarms', 'NMSController@alarms');
 
 Route::get('/rep-access-internet', function(){
 	return view('rep_access_internet');

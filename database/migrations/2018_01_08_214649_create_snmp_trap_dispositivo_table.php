@@ -16,8 +16,9 @@ class CreateSnmpTrapDispositivoTable extends Migration
         Schema::create('snmp_trap_dispositivo', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('idDispositivo')->unsigned()->nullable();
-            $table->string('fechaInicio');
-            $table->string('fechaFin');
+            $table->string('tipoNMS', 20);
+            $table->string('fechaInicio', 30);
+            $table->string('fechaFin', 30);
             $table->string('elementoAfectado');
             $table->string('descripcion');
             $table->string('estado');
