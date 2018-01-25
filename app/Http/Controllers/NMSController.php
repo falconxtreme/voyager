@@ -10,43 +10,31 @@ class NMSController extends Controller
 {
     //
     public function alarms(){
-		$alarms = SnmpTrapDispositivo::all();
+		//$alarms = SnmpTrapDispositivo::all();
+        //optimizar para que se divida en codigo y no en tres llamadas a BD
+        $alarmsPrime = $this->alarmsPrime();
+        $alarmsCambium = $this->alarmsCambium();
+        $alarmsNeteco = $this->alarmsNeteco();
 
     	return view('alarms', [
-    		'alarms' => $alarms,
+    		'alarmsPrime' => $alarmsPrime,
+            'alarmsCambium' => $alarmsCambium,
+            'alarmsNeteco' => $alarmsNeteco,
     	]);
     }
 
-    public function alarmsPrime(){
-		$alarmsNeteco = [
-			'una cadena',
-			'dos cadena'
-		];
-
-    	return view('alarms', [
-    		'alarmsNeteco' => $alarmsNeteco,
-    	]);
+    private function alarmsPrime(){
+		$alarmsPrime = SnmpTrapDispositivo::where('tipoNMS',"Prime")->get();
+    	return $alarmsPrime;
     }
 
-    public function alarmsCambium(){
-		$alarmsNeteco = [
-			'una cadena',
-			'dos cadena'
-		];
-
-    	return view('alarms', [
-    		'alarmsNeteco' => $alarmsNeteco,
-    	]);
+    private function alarmsCambium(){
+		$alarmsCambium = SnmpTrapDispositivo::where('tipoNMS',"Cambium")->get();
+        return $alarmsCambium;
     }
 
     public function alarmsNeteco(){
-		$alarmsNeteco = [
-			'una cadena',
-			'dos cadena'
-		];
-
-    	return view('alarms', [
-    		'alarmsNeteco' => $alarmsNeteco,
-    	]);
+		$alarmsNeteco = SnmpTrapDispositivo::where('tipoNMS',"Neteco")->get();
+        return $alarmsNeteco;
     }
 }

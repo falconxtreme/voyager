@@ -95,7 +95,7 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <span class="input-icon icon-right">
-                                                    <input type="text" class="form-control" id="codigoUbigeoInput" placeholder="Código de Ubigeo">
+                                                    <input type="text" class="form-control" id="codigoUbigeoInput" placeholder="Código de Ubigeo" maxlength="6">
                                                     <i class="fa fa-globe"></i>
                                                 </span>
                                             </div>
@@ -103,8 +103,28 @@
                                         <div class="col-sm-6">
                                              <div class="form-group">
                                                 <span class="input-icon icon-right">
+                                                    <!--
                                                     <input type="text" class="form-control" id="departamentoInput" placeholder="Departamento">
                                                     <i class="fa fa-globe"></i>
+                                                    -->
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-success" href="javascript:void(0);">Departamento</a>
+                                                        <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-download"></i></a>
+                                                        <ul class="dropdown-menu dropdown-success">
+                                                            @foreach ($departments as $department)
+                                                                <li>
+                                                                    <a href="/rep-access-internet/{{ $department['idDepartamento'] }}">{{ $department['departamento'] }}</a>
+                                                                </li>
+                                                            @endforeach
+                                                            <li>
+                                                                <a href="javascript:void(0);">CSV</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0);">XLS</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
                                                 </span>
                                             </div>
                                         </div>
