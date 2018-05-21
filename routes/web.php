@@ -28,6 +28,8 @@ Route::get('/alarms', 'NMSController@alarms');
 
 Route::get('/rep-access-internet', 'AccesoInternetController@departments');
 Route::get('/rep-access-internet/{department}', 'AccesoInternetController@provinces');
+Route::get('/rep-access-internet/department/{province}', 'AccesoInternetController@districts');
+//Route::get('/rep-access-internet/{department}/{province}', 'AccesoInternetController@districts');
 
 Route::get('/rep-access-intranet', function(){
 	return view('rep_access_intranet');
