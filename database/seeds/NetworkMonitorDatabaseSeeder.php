@@ -16,5 +16,8 @@ class NetworkMonitorDatabaseSeeder extends Seeder
         $this->call(MyNodoTableSeeder::class);
         $this->call(MyDispositivoTableSeeder::class);
         $this->call(MySnmpTrapDispositivoSeeder::class);
+        $this->call(MyBeneficiarioSeeder::class);
+        $this->call(MySubredBeneficiarioSeeder::class);
+        $this->call(MyNetflowSeeder::class);
     }
 }

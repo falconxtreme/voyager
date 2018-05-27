@@ -17,8 +17,8 @@ class MyNodoTableSeeder extends Seeder
         if (Nodo::count() == 0 && Ubigeo::count()>0) {
         	Nodo::create([                 
         		'idUbigeo' => 1,                 
-        		'tipoNodo'  => 'Hospital',                 
-        		'descripcion'  => 'Hospital del Norte',                 
+        		'tipoNodo'  => 'Regional',                 
+        		'descripcion'  => 'Norte Capital',                 
         	]);
         }
     }

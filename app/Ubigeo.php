@@ -8,4 +8,6 @@ class Ubigeo extends Model
 {
     //
     protected $table = 'ubigeo';
+
+    //protected $guarded = [];//--para errores de MassAssignmentException
 }

@@ -48,7 +48,8 @@
                     <div class="navbar-header pull-left">
                         <a href="#" class="navbar-brand">
                             <small>
-                                <img src="assets/img/fitel-enlace.png" alt="FITEL" />
+                                <!--<img src="assets/img/fitel-enlace.png" alt="FITEL" />-->
+                                <img src="{{ asset('assets/img/fitel-enlace.png') }}" alt="FITEL">
                             </small>
                         </a>
                     </div>
@@ -440,6 +441,8 @@
         <script src="{{ asset('js/charts/flot/jquery.flot.stack.js') }}"></script>
         <script src="{{ asset('js/charts/flot/flot-init.js') }}"></script>
         
+        <script type="text/javascript" src="{{ asset('js/subsistema.js') }}"></script>
+
         <script>
             $( document ).ready(function() {
                 // Handler for .ready() called.
