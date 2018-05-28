@@ -301,14 +301,14 @@
                                         </div>
                                         <div class="col-xs-4 col-md-4">
                                             <div class="btn-group">
-                                                <a class="btn btn-success" href="javascript:void(0);">Exportar</a>
+                                                <a class="btn btn-success" data-toggle="dropdown" href="javascript:void(0);">Exportar</a>
                                                 <a class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-download"></i></a>
                                                 <ul class="dropdown-menu dropdown-success">
                                                     <li>
                                                         <a href="javascript:void(0);">CSV</a>
                                                     </li>
                                                     <li>
-                                                        <a href="javascript:void(0);">XLS</a>
+                                                        <a href="/rep-access-internet/export/excel">XLS</a>
                                                     </li>
                                                 </ul>
                                             </div>

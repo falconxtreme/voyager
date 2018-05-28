@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use App\Ubigeo;
 use App\Netflow;
 use App\Http\Requests\FilterAccesoInternetRequest;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Session;
+//use Config\Session;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\InvoicesExport;
+use App\Exports\ReportExport;
 
 class AccesoInternetController extends Controller
 {
@@ -46,20 +52,6 @@ class AccesoInternetController extends Controller
     	]);
     }
 
-    /*
-    public function districts($idDepartamento,$idProvincia){
-        $departments = Ubigeo::distinct()->get(['idDepartamento','departamento']);
-        $provinces = Ubigeo::where('idDepartamento',$idDepartamento)->distinct()->get(['idProvincia','provincia']);
-        $districts = Ubigeo::where('idProvincia',$idProvincia)->distinct()->get(['idDistrito','distrito']);
-
-        return view('rep_access_internet', [
-            'departments' => $departments,
-            'idDepartamento'=> $idDepartamento,
-            'provinces' => $provinces,
-            'idProvincia'=> $idProvincia,
-            'districts' => $districts
-        ]);
-    }*/
     public function districts($idDepartamentoProvincia){
         list($idDep,$desDep,$idProv,$desProv) = explode('-', $idDepartamentoProvincia);
         //list($dep,$Prov) = split('-', $idDepartamentoProvincia);
@@ -95,9 +87,8 @@ class AccesoInternetController extends Controller
 
     public function filter(FilterAccesoInternetRequest $request){
         $NetflowList = Netflow::distinct()->get(['id','idSubred','ipOrigen','ipDestino','puertoOrigen','puertoDestino','protocolo','cantPqts','cantBytes','flagsTCP','inicioSesion','finSesion','duracion','url','created_at','updated_at']);
-        //dd($NetflowList);
-        //return $request->input('timepicker1');
         $departments = Ubigeo::distinct()->get(['idDepartamento','departamento']);
+        Session::put('NetflowList', $NetflowList);
 
         return view('rep_access_internet', [
             'departments' => $departments,
@@ -109,5 +100,10 @@ class AccesoInternetController extends Controller
             'districts' => [],
             'listNetflow' => $NetflowList
         ]);
+    }
+
+    public function exportListFiltered(){
+        //dd($NetflowList);
+        return Excel::download(new ReportExport('exportAccesoInternet'), 'Reporte.xlsx');
     }
 }

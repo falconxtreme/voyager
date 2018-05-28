@@ -30,6 +30,7 @@ Route::get('/rep-access-internet', 'AccesoInternetController@departments');
 Route::get('/rep-access-internet/{department}', 'AccesoInternetController@provinces');
 Route::get('/rep-access-internet/department/{province}', 'AccesoInternetController@districts');
 Route::post('/rep-access-internet/filter','AccesoInternetController@filter');
+Route::get('/rep-access-internet/export/excel','AccesoInternetController@exportListFiltered');
 //Route::get('/rep-access-internet/{department}/{province}', 'AccesoInternetController@districts');
 
 Route::get('/rep-access-intranet', function(){
