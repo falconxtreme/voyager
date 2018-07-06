@@ -184,104 +184,108 @@
                                                         <div class="header bordered-sky">
                                                             Alarmas por severidad
                                                         </div>
-                                                        <table class="table table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>
-                                                                        Id Trap
-                                                                    </th>
-                                                                    <th>
-                                                                        Severidad
-                                                                    </th>
-                                                                    <th>
-                                                                        Fecha Inicio
-                                                                    </th>
-                                                                    <th>
-                                                                        Fecha Fin
-                                                                    </th>
-                                                                    <th>
-                                                                        Elemento Afectado
-                                                                    </th>
-                                                                    <th>
-                                                                        Descripción
-                                                                    </th>
-                                                                    <th>
-                                                                        Estado
-                                                                    </th>
-                                                                    <th>
-                                                                        Nro. Reparación
-                                                                    </th>
-                                                                    <th>
-                                                                        Motivo Exclusión
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
 
-                                                                @foreach ($alarmsCambium as $alarm)
-                                                                    <tr class="success">
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>
+                                                                            Id Trap
+                                                                        </th>
+                                                                        <th>
+                                                                            Severidad
+                                                                        </th>
+                                                                        <th>
+                                                                            Fecha Inicio
+                                                                        </th>
+                                                                        <th>
+                                                                            Fecha Fin
+                                                                        </th>
+                                                                        <th>
+                                                                            Elemento Afectado
+                                                                        </th>
+                                                                        <th>
+                                                                            Descripción
+                                                                        </th>
+                                                                        <th>
+                                                                            Estado
+                                                                        </th>
+                                                                        <th>
+                                                                            Nro. Reparación
+                                                                        </th>
+                                                                        <th>
+                                                                            Motivo Exclusión
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+
+                                                                    @foreach ($alarmsCambium as $alarm)
+                                                                        <tr class="success">
+                                                                            <td>
+                                                                                {{ $alarm['id'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['severidad'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['fechaInicio'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['fechaFin'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['elementoAfectado'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['descripcion'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['estado'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['nroReparacion'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['motivoExclusion'] }}
+                                                                            </td>
+                                                                        </tr>
+                                                                    @endforeach
+
+                                                                    <tr class="danger">
                                                                         <td>
-                                                                            {{ $alarm['id'] }}
+                                                                            4
                                                                         </td>
                                                                         <td>
-                                                                            {{ $alarm['severidad'] }}
+                                                                            Critical
                                                                         </td>
                                                                         <td>
-                                                                            {{ $alarm['fechaInicio'] }}
+                                                                            Column heading
                                                                         </td>
                                                                         <td>
-                                                                            {{ $alarm['fechaFin'] }}
+                                                                            Column heading
                                                                         </td>
                                                                         <td>
-                                                                            {{ $alarm['elementoAfectado'] }}
+                                                                            Column heading
                                                                         </td>
                                                                         <td>
-                                                                            {{ $alarm['descripcion'] }}
+                                                                            Column heading
                                                                         </td>
                                                                         <td>
-                                                                            {{ $alarm['estado'] }}
+                                                                            Column heading
                                                                         </td>
                                                                         <td>
-                                                                            {{ $alarm['nroReparacion'] }}
+                                                                            Column heading
                                                                         </td>
                                                                         <td>
-                                                                            {{ $alarm['motivoExclusion'] }}
+                                                                            Column heading
                                                                         </td>
                                                                     </tr>
-                                                                @endforeach
 
-                                                                <tr class="danger">
-                                                                    <td>
-                                                                        4
-                                                                    </td>
-                                                                    <td>
-                                                                        Critical
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                </tr>
-
-                                                            </tbody>
-                                                        </table>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        
 
                                                         <div class="footer">
                                                             <code>alarmas</code>
@@ -299,104 +303,77 @@
                                                         <div class="header bordered-sky">
                                                             Alarmas por severidad
                                                         </div>
-                                                        <table class="table table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>
-                                                                        Id Trap
-                                                                    </th>
-                                                                    <th>
-                                                                        Severidad
-                                                                    </th>
-                                                                    <th>
-                                                                        Fecha Inicio
-                                                                    </th>
-                                                                    <th>
-                                                                        Fecha Fin
-                                                                    </th>
-                                                                    <th>
-                                                                        Elemento Afectado
-                                                                    </th>
-                                                                    <th>
-                                                                        Descripción
-                                                                    </th>
-                                                                    <th>
-                                                                        Estado
-                                                                    </th>
-                                                                    <th>
-                                                                        Nro. Reparación
-                                                                    </th>
-                                                                    <th>
-                                                                        Motivo Exclusión
-                                                                    </th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-
-                                                                @foreach ($alarmsNeteco as $alarm)
-                                                                    <tr class="success">
-                                                                        <td>
-                                                                            {{ $alarm['id'] }}
-                                                                        </td>
-                                                                        <td>
-                                                                            {{ $alarm['severidad'] }}
-                                                                        </td>
-                                                                        <td>
-                                                                            {{ $alarm['fechaInicio'] }}
-                                                                        </td>
-                                                                        <td>
-                                                                            {{ $alarm['fechaFin'] }}
-                                                                        </td>
-                                                                        <td>
-                                                                            {{ $alarm['elementoAfectado'] }}
-                                                                        </td>
-                                                                        <td>
-                                                                            {{ $alarm['descripcion'] }}
-                                                                        </td>
-                                                                        <td>
-                                                                            {{ $alarm['estado'] }}
-                                                                        </td>
-                                                                        <td>
-                                                                            {{ $alarm['nroReparacion'] }}
-                                                                        </td>
-                                                                        <td>
-                                                                            {{ $alarm['motivoExclusion'] }}
-                                                                        </td>
+                                                        <div class="table-scrollable">
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>
+                                                                            Id Trap
+                                                                        </th>
+                                                                        <th>
+                                                                            Severity
+                                                                        </th>
+                                                                        <th>
+                                                                            Name
+                                                                        </th>
+                                                                        <th>
+                                                                            Alarm Source
+                                                                        </th>
+                                                                        <th>
+                                                                            First Ocurrence Time
+                                                                        </th>
+                                                                        <th>
+                                                                            Last Ocurrence Time
+                                                                        </th>
+                                                                        <th>
+                                                                            Location Info
+                                                                        </th>
+                                                                        <th>
+                                                                            Clearance Time
+                                                                        </th>
+                                                                        <th>
+                                                                            Site Name
+                                                                        </th>
                                                                     </tr>
-                                                                @endforeach
+                                                                </thead>
+                                                                <tbody>
 
-                                                                <tr class="danger">
-                                                                    <td>
-                                                                        4
-                                                                    </td>
-                                                                    <td>
-                                                                        Critical
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                    <td>
-                                                                        Column heading
-                                                                    </td>
-                                                                </tr>
+                                                                    @foreach ($alarmsNeteco as $alarm)
+                                                                        <tr class="success">
+                                                                            <td>
+                                                                                {{ $alarm['id'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['severidad'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['elementoAfectado'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['alarmSource'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['fechaProblema'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['fechaProblema'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['locationInfo'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['fechaClareo'] }}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{ $alarm['alarmSource'] }}
+                                                                            </td>
+                                                                        </tr>
+                                                                    @endforeach
 
-                                                            </tbody>
-                                                        </table>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        
 
                                                         <div class="footer">
                                                             <code>alarmas</code>
