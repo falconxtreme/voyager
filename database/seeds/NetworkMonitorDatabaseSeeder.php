@@ -21,5 +21,6 @@ class NetworkMonitorDatabaseSeeder extends Seeder
         $this->call(MyNetflowSeeder::class);
         $this->call(EquipoTableSeeder::class);
         $this->call(TrapNetecoTableSeeder::class);
+        $this->call(TiempoMinutoTableSeeder::class);
     }
 }
